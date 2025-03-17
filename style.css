@@ -1,0 +1,280 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Cabeçalho */
+header {
+    background-color: #082250;
+    display: flex;
+    align-items: center;
+    padding: 10px 20px;
+    font-family: 'DejaVu Serif', serif;
+    display: flex;
+    font-size: 20px;
+    color: #eeeeee;
+}
+
+.logotipo img {
+    width: 250px;
+    height: auto;
+    padding: 15px;
+    padding-left: 10px;
+}
+
+.nome-faculdade {
+    display: flex;
+    font-size: 20px;
+    text-align: center;
+    padding-left: 110px;
+}
+
+#primeira-parte {
+    color: #eeeeee;
+    font-weight: 500;
+    text-align: center;
+}
+
+#segunda-parte {
+    color: #ffd700;
+    font-weight: 500;
+    text-align: center;
+}
+
+/* Sobre o Curso */
+
+.sobre {
+    background-color: #eeeeee;
+    font-family: 'Bitter', serif;
+    padding: 25px 1px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.sobre h1 {
+    color: #082250;
+    font-size: 40px;
+}
+
+.sobre p {
+    color: #082250;
+    max-width: 890px;
+    font-size: 20px;
+}
+
+.info {
+    background-color: #eeeeee;
+    color: #082250;
+    font-family: 'Bitter', serif;
+    padding: 5px 40px;
+    text-align: justify;
+    font-size: 18px;
+}
+
+.info h2 {
+    text-decoration: underline;
+    padding-left: 15px;
+    font-size: 23px;
+}
+.info p{
+    font-size: 18px;
+}
+.info h3 {
+    text-decoration: underline;
+    text-transform: uppercase;
+    font-size: 18px;
+}
+
+.info img{
+    height: 200px;
+    border-radius: 50%;
+    border: 2px solid #ffd700;
+    margin: 15px 0px;
+}
+
+
+/* Disciplinas */
+
+.disciplinas {
+    background-color: #eeeeee;
+    justify-content: space-between;
+    font-family: 'Bitter', serif;
+    padding: 15px 50px;
+}
+
+.disciplinas h2 {
+    text-align: center;
+    color: #082250;
+    font-size: 33px;
+    padding-bottom: 10px;
+    text-decoration: underline;
+}
+
+.container-disciplina {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.disciplina {
+    width: 48%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 16px;
+    padding: 20px;
+    background-color: rgba(255, 215, 0, 0.5);
+    color: #082250;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    align-items: flex-start;
+    margin-bottom: 40px;
+}
+
+.disciplina a {
+    text-decoration: underline;
+    display: flex;
+    font-weight: bolder;
+    font-size: 15px;
+
+}
+
+.disciplina:hover {
+    background-color: #ffd700;
+}
+
+.disciplina img {
+    width: 37%;
+    height: auto;
+    border-radius: 8px;
+    border: 2px solid #ffd700;
+    display: block;
+}
+
+.disciplina .content {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    width: 60%;
+}
+
+.disciplina h3 {
+    text-align: left;
+    text-transform: uppercase;
+    font-size: 21px;
+    padding-bottom: 5px;
+    text-decoration: underline;
+}
+
+.disciplina p {
+    font-size: 18px;
+    margin-top: 10px;
+    text-align: justify;
+}
+
+
+/* Rodapé */
+
+footer {
+    background-color: #082250;
+    color: #eeeeee;
+    font-family: 'DejaVu Serif', serif;
+    text-align: center;
+    padding: 8px;
+    font-size: 17px;
+    font-weight: 500;
+}
+
+/* Disciplinas Individualmente */
+#titulo-individual {
+    background-color: #eeeeee;
+    font-family: 'Bitter', serif;
+    padding: 20px;
+    color: #082250;
+    padding-bottom: 0%;
+}
+
+#titulo-individual a {
+    text-decoration: none;
+    color: #082250;
+    font-weight: bolder;
+    text-align: left;
+    font-size: 18px;
+}
+
+#titulo-individual a:hover {
+    color: #ffd700;
+    text-decoration: underline;
+}
+
+.individual {
+    background-color: #eeeeee;
+    font-family: 'Bitter', serif;
+    padding: 10px 25px;
+    color: #082250;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.individual h1 {
+    text-align: center;
+    font-size: 30px;
+    padding-bottom: 8px;
+    text-decoration: underline;
+}
+
+.individual p {
+    font-size: 20px;
+    max-width: 900px;
+}
+
+.grade-imagens {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); 
+    grid-template-rows: repeat(2, 1fr);;
+    padding: 0px 30px;
+    gap: 30px;
+    background-color: #eeeeee;
+    padding-bottom: 50px;
+}
+
+.grade-imagens img {
+    width: 100%;
+    height: 240px; 
+    border-radius: 8px; 
+    border: 3px solid #ffd700;
+}
+.grade-imagens img:hover {
+    border: 13px solid #ffd700;
+}
+
+figcaption{
+    background-color: #eeeeee;
+    color: #082250;
+    font-family: 'Bitter', serif;
+    text-align: center;
+    font-size: 18px;
+
+}
+
+.subtitulo{
+    background-color: #eeeeee;
+    font-family: 'Bitter', serif;
+    color: #082250;
+    text-align: center;
+    padding-top: 40px;
+    text-decoration: underline;
+    padding-bottom: 10px;
+}
+
+
+
+
